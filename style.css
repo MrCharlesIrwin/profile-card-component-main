@@ -1,0 +1,85 @@
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+body {
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-position: -120px -200px, 180px 390px;
+  background-size: 360px;
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--Dark-cyan);
+  font-family: "Kumbh Sans" , sans-serif,  serif;
+  color: var(--Very-dark-desaturated-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95dvh;
+}
+main {
+  background-image: url("images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+  background-color: white;
+  border-radius: 20px;
+  height: 405px;
+  width: 320px;
+}
+h1 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+p {
+  color: var(--Dark-gray);
+  margin-top: 6%;
+}
+b {
+  display: block;
+  font-size: 1.3rem;
+}
+hr {
+  background-color: hsl(0, 5%, 85%);
+  border: none;
+  height: 1px;
+}
+.victor div {
+  margin: 4%;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+.victor div aside {
+  font-size: 1.4rem;
+  color: var(--Dark-gray);
+}
+.victor p {
+  margin-top: 0%;
+}
+.victor {
+  text-align: center;
+  margin-top: 90px;
+}
+.victor img {
+  border: 6px solid white;
+  border-radius: 300px;
+}
+.grid-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15%;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+}
+.grid-wrapper p {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 1200px) {
+body {
+  background-size: 60%;
+  background-position: -30% 200%, 120% -150%;
+}
+}
